@@ -1,0 +1,76 @@
+.header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo h1 {
+    margin: 0;
+    color: #e74c3c;
+    font-size: 1.8rem;
+  }
+  
+  .logo .tagline {
+    margin: 0;
+    font-size: 0.8rem;
+    color: #666;
+  }
+  
+  .nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .nav a:hover {
+    color: #e74c3c;
+  }
+  
+  .header-actions {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+  
+  .header-actions button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .header-actions button:hover {
+    background-color: #e9ecef;
+  }
+  
+  .btn-login {
+    background-color: #e74c3c !important;
+    color: white !important;
+  }
+  
+  .btn-login:hover {
+    background-color: #c0392b !important;
+  }
