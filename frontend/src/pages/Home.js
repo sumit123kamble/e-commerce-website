@@ -5,6 +5,8 @@ const Home = () => {
   return (
     <div className="home">
       <div className="welcome-section">
+        <img 
+          src="/images/img1.png" alt="FoodHub Banner" className="home-banner"/>
         <h1>Welcome to FoodHub</h1>
         <p>Your favorite food products, delivered fresh!</p>
       </div>

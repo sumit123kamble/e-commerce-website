@@ -32,9 +32,9 @@ const Footer = () => {
         
         <div className="footer-section">
           <h3>Contact Us</h3>
-          <p>📧 info@foodhub.com</p>
+          <p>📧 kamblesumit2001@gmail.com</p>
           <p>📞 +91 1234567890</p>
-          <p>📍 Latur, Maharashtra, India</p>
+          <p>📍 Pandharpur, Maharashtra, India</p>
         </div>
       </div>
       

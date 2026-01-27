@@ -1,10 +1,21 @@
 .header {
-    background-color: #ffffff;
+    background-color: #800000;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     padding: 1rem 0;
     position: sticky;
     top: 0;
     z-index: 100;
+  }
+  .logo-btn {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .logo-btn:hover {
+    opacity: 0.9;
   }
   
   .container {
@@ -16,35 +27,49 @@
     align-items: center;
   }
   
-  .logo h1 {
+  .logoName {
+    display: flex;
+    align-items: center;
+    gap: 1px;
+  }
+  
+  .logo {
+    width: 100px;        /* control size here */
+    height: 100px;
+    margin-left: -50%;
+    object-fit: contain;
+    flex-shrink: 0;     /* prevents stretching */
+  }
+  
+
+  .logoName h1 {
     margin: 0;
-    color: #e74c3c;
+    color: #FFFFFF;
     font-size: 1.8rem;
   }
   
-  .logo .tagline {
+  .logoName .tagline {
     margin: 0;
     font-size: 0.8rem;
-    color: #666;
+    color: #FFFFFF;
   }
   
   .nav ul {
     list-style: none;
     display: flex;
-    gap: 2rem;
+    gap: 3rem;
     margin: 0;
     padding: 0;
   }
-  
   .nav a {
     text-decoration: none;
-    color: #333;
+    color: #FFFFFF;
     font-weight: 500;
     transition: color 0.3s;
   }
   
   .nav a:hover {
-    color: #e74c3c;
+    color: #A9A9A9;
   }
   
   .header-actions {
