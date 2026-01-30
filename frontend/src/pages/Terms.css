@@ -1,0 +1,286 @@
+/* Policy Page Styles - Matching Site Aesthetic */
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap');
+
+:root {
+  --color-cream: #FBF7F0;
+  --color-terracotta: #D4756F;
+  --color-burnt-orange: #E67E50;
+  --color-olive: #8B956D;
+  --color-forest: #4A5D3F;
+  --color-charcoal: #2D3047;
+  --color-warm-beige: #EAE2D6;
+  --color-rust: #B85C4C;
+}
+
+.policy-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 5rem 2rem;
+  background-color: var(--color-cream);
+  min-height: 100vh;
+  animation: fadeIn 0.8s ease-out;
+}
+
+.policy-container h1 {
+  font-family: 'Archivo Black', sans-serif;
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  color: var(--color-forest);
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  text-align: center;
+  position: relative;
+  padding-bottom: 1.5rem;
+}
+
+.policy-container h1::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--color-burnt-orange) 0%, var(--color-rust) 100%);
+  border-radius: 2px;
+}
+
+.policy-intro {
+  font-family: 'Crimson Text', serif;
+  font-size: 1.2rem;
+  color: var(--color-charcoal);
+  line-height: 1.8;
+  margin-bottom: 3rem;
+  text-align: center;
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  border-left: 4px solid var(--color-burnt-orange);
+}
+
+.policy-section {
+  margin-bottom: 2.5rem;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  animation: slideUp 0.6s ease-out backwards;
+}
+
+.policy-section:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.policy-section:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.policy-section:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+.policy-section:nth-child(5) {
+  animation-delay: 0.4s;
+}
+
+.policy-section:nth-child(6) {
+  animation-delay: 0.5s;
+}
+
+.policy-section:nth-child(7) {
+  animation-delay: 0.6s;
+}
+
+.policy-section:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+  transform: translateY(-3px);
+}
+
+.policy-section h3 {
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 1.5rem;
+  color: var(--color-charcoal);
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding-bottom: 0.8rem;
+  border-bottom: 2px solid var(--color-warm-beige);
+  position: relative;
+}
+
+.policy-section h3::before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 60px;
+  height: 2px;
+  background-color: var(--color-burnt-orange);
+}
+
+.policy-section p {
+  font-family: 'Crimson Text', serif;
+  font-size: 1.1rem;
+  color: var(--color-charcoal);
+  line-height: 1.8;
+  opacity: 0.85;
+  margin-top: 1rem;
+}
+
+.policy-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0 0;
+}
+
+.policy-section ul li {
+  font-family: 'Crimson Text', serif;
+  font-size: 1.1rem;
+  color: var(--color-charcoal);
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  padding-left: 2.5rem;
+  position: relative;
+  opacity: 0.85;
+}
+
+.policy-section ul li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 22px;
+  height: 22px;
+  background-color: var(--color-burnt-orange);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 0.85rem;
+}
+
+.policy-section ul li:last-child {
+  margin-bottom: 0;
+}
+
+.policy-footer {
+  margin-top: 3rem;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  border-top: 3px solid var(--color-burnt-orange);
+}
+
+.policy-footer p {
+  font-family: 'Crimson Text', serif;
+  font-size: 1rem;
+  color: var(--color-olive);
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+.policy-footer p:first-child {
+  font-weight: 600;
+  color: var(--color-charcoal);
+}
+
+.policy-footer p:last-child {
+  margin-bottom: 0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .policy-container {
+    padding: 4rem 1.5rem;
+  }
+
+  .policy-container h1 {
+    font-size: 2rem;
+  }
+
+  .policy-intro {
+    font-size: 1.1rem;
+    padding: 1.2rem;
+  }
+
+  .policy-section {
+    padding: 1.5rem;
+  }
+
+  .policy-section h3 {
+    font-size: 1.3rem;
+  }
+
+  .policy-section p,
+  .policy-section ul li {
+    font-size: 1rem;
+  }
+
+  .policy-footer {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .policy-container {
+    padding: 3rem 1rem;
+  }
+
+  .policy-container h1 {
+    font-size: 1.8rem;
+    padding-bottom: 1rem;
+  }
+
+  .policy-intro {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+
+  .policy-section {
+    padding: 1.2rem;
+  }
+
+  .policy-section h3 {
+    font-size: 1.2rem;
+  }
+
+  .policy-section ul li {
+    padding-left: 2rem;
+  }
+
+  .policy-section ul li::before {
+    width: 20px;
+    height: 20px;
+    font-size: 0.75rem;
+  }
+}

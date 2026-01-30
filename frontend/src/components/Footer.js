@@ -16,7 +16,6 @@ const Footer = () => {
             <li><a href="/products">Products</a></li>
             <li><a href="/about">About Us</a></li>
             <li><a href="/contact">Contact</a></li>
-            <li><a href="/faq">FAQ</a></li>
           </ul>
         </div>
         
@@ -24,8 +23,7 @@ const Footer = () => {
           <h3>Customer Service</h3>
           <ul>
             <li><a href="/shipping">Shipping Info</a></li>
-            <li><a href="/returns">Returns</a></li>
-            <li><a href="/privacy">Privacy Policy</a></li>
+            <li><a href="/policy">Privacy Policy</a></li>
             <li><a href="/terms">Terms & Conditions</a></li>
           </ul>
         </div>

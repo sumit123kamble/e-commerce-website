@@ -1,0 +1,221 @@
+/* Shipping Page Styles - Matching Site Aesthetic */
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap');
+
+:root {
+  --color-cream: #FBF7F0;
+  --color-terracotta: #D4756F;
+  --color-burnt-orange: #E67E50;
+  --color-olive: #8B956D;
+  --color-forest: #4A5D3F;
+  --color-charcoal: #2D3047;
+  --color-warm-beige: #EAE2D6;
+  --color-rust: #B85C4C;
+}
+
+.shipping-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 5rem 2rem;
+  background-color: var(--color-cream);
+  min-height: 100vh;
+  animation: fadeIn 0.8s ease-out;
+}
+
+.shipping-container h2 {
+  font-family: 'Archivo Black', sans-serif;
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  color: var(--color-forest);
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  text-align: center;
+  position: relative;
+  padding-bottom: 1.5rem;
+}
+
+.shipping-container h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--color-burnt-orange) 0%, var(--color-rust) 100%);
+  border-radius: 2px;
+}
+
+.shipping-container > p {
+  font-family: 'Crimson Text', serif;
+  font-size: 1.2rem;
+  color: var(--color-charcoal);
+  line-height: 1.8;
+  margin-bottom: 3rem;
+  text-align: center;
+  opacity: 0.9;
+}
+
+.shipping-container h3 {
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 1.5rem;
+  color: var(--color-charcoal);
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding-left: 1rem;
+  border-left: 4px solid var(--color-burnt-orange);
+  transition: all 0.3s ease;
+}
+
+.shipping-container h3:hover {
+  padding-left: 1.5rem;
+  border-left-color: var(--color-rust);
+}
+
+.shipping-container p {
+  font-family: 'Crimson Text', serif;
+  font-size: 1.1rem;
+  color: var(--color-charcoal);
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  opacity: 0.85;
+  padding: 1rem 1.5rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.shipping-container p:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateX(5px);
+}
+
+.shipping-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+}
+
+.shipping-container ul li {
+  font-family: 'Crimson Text', serif;
+  font-size: 1.1rem;
+  color: var(--color-charcoal);
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  padding: 1rem 1.5rem;
+  padding-left: 3rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  position: relative;
+  transition: all 0.3s ease;
+  animation: slideInLeft 0.6s ease-out backwards;
+}
+
+.shipping-container ul li:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.shipping-container ul li:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.shipping-container ul li::before {
+  content: '✓';
+  position: absolute;
+  left: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  background-color: var(--color-burnt-orange);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.shipping-container ul li:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateX(5px);
+  background-color: var(--color-warm-beige);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .shipping-container {
+    padding: 4rem 1.5rem;
+  }
+
+  .shipping-container h2 {
+    font-size: 2rem;
+  }
+
+  .shipping-container h3 {
+    font-size: 1.3rem;
+  }
+
+  .shipping-container p,
+  .shipping-container ul li {
+    font-size: 1rem;
+    padding: 0.8rem 1.2rem;
+  }
+
+  .shipping-container ul li {
+    padding-left: 2.5rem;
+  }
+
+  .shipping-container ul li::before {
+    left: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .shipping-container {
+    padding: 3rem 1rem;
+  }
+
+  .shipping-container h2 {
+    font-size: 1.8rem;
+    padding-bottom: 1rem;
+  }
+
+  .shipping-container h3 {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+  }
+
+  .shipping-container p,
+  .shipping-container ul li {
+    padding: 0.7rem 1rem;
+  }
+}
