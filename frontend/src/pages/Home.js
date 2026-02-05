@@ -156,10 +156,10 @@ const Home = () => {
           <p className="cta-text">
             Join thousands of happy customers who trust us for quality food products
           </p>
-          <button className="cta-button">
+          <a href="/products"><button className="cta-button">
             Start Shopping
             <span className="cta-arrow">→</span>
-          </button>
+          </button></a>
         </div>
       </section>
     </div>
