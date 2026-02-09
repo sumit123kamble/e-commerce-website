@@ -47,7 +47,7 @@ const About = () => {
           className="hero-content"
           style={{ transform: `translateY(${scrollY * 0.5}px)` }}
         >
-          <div className="hero-badge">EST. 2020</div>
+          <div className="hero-badge">EST. 2026</div>
           <h1 className="hero-title">
             Crafted with
             <span className="hero-title-accent"> Passion</span>

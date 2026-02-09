@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Product.css";
 import { useCart } from "../context/CartContext";
@@ -6,6 +6,8 @@ import { useCart } from "../context/CartContext";
 const Products = () => {
   const navigate = useNavigate();
   const { addToCart } = useCart();
+
+  const [showPopup, setShowPopup] = useState(false);
 
   const products = [
     {
@@ -24,9 +26,24 @@ const Products = () => {
     },
   ];
 
+  const handleAddToCart = (product) => {
+    addToCart(product);
+
+    setShowPopup(true);
+    setTimeout(() => {
+      setShowPopup(false);
+    }, 2000);
+  };
+
   return (
     <div className="products-page">
       <h2>Our Products</h2>
+
+      {showPopup && (
+        <div className="cart-popup">
+          Item added to cart ✅
+        </div>
+      )}
 
       <div className="products-grid">
         {products.map((product) => (
@@ -54,7 +71,7 @@ const Products = () => {
                 className="cart-btn"
                 onClick={(e) => {
                   e.stopPropagation();
-                  addToCart(product);
+                  handleAddToCart(product);
                 }}
               >
                 Add to Cart
