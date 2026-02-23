@@ -128,8 +128,8 @@
   text-decoration: none;
   color: #FFFFFF;
   font-weight: 600;
-  font-size: 1.05rem;
-  font-family: 'Crimson Text', serif;
+  font-size: 1.07rem;
+  font-family: "Snell Roundhand", "Segoe Script", "Comic Sans MS", cursive;
   transition: all 0.3s ease;
   position: relative;
   padding: 0.5rem 0;
@@ -170,7 +170,7 @@
   color: var(--color-rust);
   cursor: pointer;
   display: inline-block;
-  font-family: 'Archivo Black', sans-serif;
+  font-family: "Snell Roundhand", "Segoe Script", "Comic Sans MS", cursive;
   padding: 10px 24px;
   text-align: center;
   text-decoration: none;
