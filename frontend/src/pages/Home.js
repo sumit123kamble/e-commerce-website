@@ -15,7 +15,7 @@ const Home = () => {
     {
       name: 'Strawberry Jam',
       description: 'Made with fresh, handpicked strawberries',
-      image: '/images/jam.png',
+      image: '/images/Strawberryjam.png',
       price: '₹149',
       rating: 4.8,
       reviews: 124,
@@ -24,7 +24,7 @@ const Home = () => {
     {
       name: 'Classic Ketchup',
       description: 'Rich, tangy tomato perfection',
-      image: '/images/ketchup.png',
+      image: '/images/ketcup.png',
       price: '₹99',
       rating: 4.6,
       reviews: 98,
@@ -33,7 +33,7 @@ const Home = () => {
     {
       name: 'Schezwan Chutney',
       description: 'Spicy and flavorful authentic taste',
-      image: '/images/schezwan.png',
+      image: '/images/shezwan.png',
       price: '₹129',
       rating: 4.9,
       reviews: 210,
