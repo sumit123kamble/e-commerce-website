@@ -99,7 +99,7 @@ const Home = () => {
         </div>
 
         <div className="hero-content">
-          <div className="hero-badge">🌿 Fresh &amp; Natural</div>
+          <div className="hero-badge">🌿 Fresh &amp; Natural<br></br> under construction</div>
 
           <h1 className="hero-title">
             Welcome to
