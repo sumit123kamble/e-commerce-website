@@ -11,12 +11,12 @@ const About = () => {
   }, []);
 
   const products = [
-    { name: 'Artisan Jams', icon: '🍓' },
-    { name: 'Classic Ketchup', icon: '🍅' },
-    { name: 'Schezwan Chutney', icon: '🌶️' },
-    { name: 'Pickles & Relishes', icon: '🥒' },
-    { name: 'Specialty Sauces', icon: '🥫' },
-    { name: 'Premium Preserves', icon: '🫙' }
+    { name: 'Artisan Jams', image: '/images/Strawberryjam.png' },
+    { name: 'Classic Ketchup',image: '/images/ketcup.png' },
+    { name: 'Schezwan Chutney',image: '/images/shezwan.png' },
+    { name: 'Pickles & Relishes', image: '/images/pickle.png'},
+    { name: 'Specialty Sauces', image: '/images/special.png' },
+    { name: 'Premium Preserves', image: '/images/preserve.png' }
   ];
 
   const values = [
@@ -88,7 +88,9 @@ const About = () => {
           </div>
         </div>
         <div className="story-image-container">
-          <div className="story-image"></div>
+          <div className="story-image">
+          <img src="/images/workers.png" alt="About our work" height="600" width="600" />
+          </div>
           <div className="story-decoration-blob"></div>
         </div>
       </section>
@@ -102,8 +104,9 @@ const About = () => {
               key={index} 
               className="product-card"
               style={{ animationDelay: `${index * 0.1}s` }}
-            >
-              <div className="product-icon">{product.icon}</div>
+            ><div className="product-icon">
+            <img src={product.image} alt={product.name} />
+          </div>
               <h3 className="product-name">{product.name}</h3>
             </div>
           ))}
