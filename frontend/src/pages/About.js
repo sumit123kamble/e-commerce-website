@@ -89,7 +89,7 @@ const About = () => {
         </div>
         <div className="story-image-container">
           <div className="story-image">
-          <img src="/images/workers.png" alt="About our work" height="600" width="600" />
+            <img src="/images/workers.png" alt="About our work" />
           </div>
           <div className="story-decoration-blob"></div>
         </div>
