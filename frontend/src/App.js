@@ -13,6 +13,7 @@ import Contact from './pages/Contact';
 import Shipping from './pages/Shipping';
 import Policy from './pages/Policy';
 import Terms from './pages/Terms';
+import Signup from './pages/Signup';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         <Route path="/shipping" element={<Shipping />} />
         <Route path="/policy" element={<Policy />} />
         <Route path="/terms" element={<Terms />} />
+        <Route path="/Signup" element={<Signup />} />
       </Routes>
       <Footer />
     </>

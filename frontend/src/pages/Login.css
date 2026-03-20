@@ -184,7 +184,7 @@
   margin-bottom: 0.8rem;
 }
 
-.login-footer span {
+.login-footer a {
   color: var(--color-burnt-orange);
   font-weight: 600;
   cursor: pointer;
@@ -192,7 +192,7 @@
   position: relative;
 }
 
-.login-footer span::after {
+.login-footer a ::after {
   content: '';
   position: absolute;
   bottom: -2px;
@@ -203,11 +203,11 @@
   transition: width 0.3s ease;
 }
 
-.login-footer span:hover::after {
+.login-footer a :hover::after {
   width: 100%;
 }
 
-.login-footer span:hover {
+.login-footer a :hover {
   color: var(--color-rust);
 }
 

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import "./Login.css";
 
 const Login = () => {
@@ -35,7 +36,7 @@ const Login = () => {
         </form>
 
         <div className="login-footer">
-          <p>Don’t have an account? <span>Sign up</span></p>
+          <p>Don’t have an account? <Link to="/Signup">Sign up</Link></p>
           <p className="forgot">Forgot password?</p>
         </div>
       </div>
